@@ -1,6 +1,5 @@
 .col1, .col2, .col3, .cols {float:left;}
-.col1 {margin:0 6px;width:264px;position:relative}
-.col1 img {border:solid 5px #fff;}
+.col1 {margin: 10px 6px;width:264px;position:relative}
 .col2 {margin:0 6px;width:560px;position:relative}
 /* index.html */
 /* index-1.html */
