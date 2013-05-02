@@ -63,7 +63,7 @@
 								<section class="col1">
 									<h2><strong>1</strong><span>幕墙铝板</span></h2>
 									<div class="pad_bot1">
-										<figure><img width="264" height="264" src="images/product/1.jpg" alt="幕墙铝板"></figure>
+										<figure><img width="264" height="196" src="images/product/1.jpg" alt="幕墙铝板"></figure>
 									</div>
 									铝单板是采用优质铝合金板材为基材，再经过数控折弯等技术成型，表面喷涂装饰性涂料的一种新型幕墙材料。
 									<a href="<?=$base_url; ?>Product.php" class="button1">更多</a>
@@ -71,7 +71,7 @@
 								<section class="col1 pad_left1">
 									<h2 class="color2"><strong>2</strong><span>双曲铝单板</span></h2>
 									<div class="pad_bot1">
-										<figure><img width="264" height="264" src="images/product/2.jpg" alt="双曲铝单板"></figure>
+										<figure><img width="264" height="196" src="images/product/2.jpg" alt="双曲铝单板"></figure>
 									</div>
 									双曲铝单板造型奇特、工艺复杂，要求其生产设备必须相当精湛，我司自行研制发明了专业的生产设备及生产技术，
 									可按照客户要求制定详细方案，定制任意尺寸双曲面、球形面，制造出独特美观的立体造型。
@@ -80,7 +80,7 @@
 								<section class="col1 pad_left1">
 									<h2 class="color3"><strong>3</strong><span>蜂窝铝板</span></h2>
 									<div class="pad_bot1">
-										<figure><img width="264" height="264" src="images/product/3.jpg" alt="蜂窝铝板"></figure>
+										<figure><img width="264" height="196" src="images/product/3.jpg" alt="蜂窝铝板"></figure>
 									</div>
 									采用热压成型技术，因铝皮和蜂窝间的高热传导值，内外铝皮的热胀冷缩同步；蜂窝铝皮上有小孔，使板内气体可以自由流动。
 									内层为特制的六边形铝蜂窝，作为粘附在夹层结构中的芯板，在切向上承受压力。
@@ -91,7 +91,7 @@
 								<section class="col1">
 									<h2><strong>4</strong><span>冲孔铝板</span></h2>
 									<div class="pad_bot1">
-										<figure><img width="264" height="264" src="images/product/4.jpg" alt="冲孔铝板"></figure>
+										<figure><img width="264" height="196" src="images/product/4.jpg" alt="冲孔铝板"></figure>
 									</div>
 									即铝板冲孔网，冲孔网，铝板冲孔板，隔音网，冲孔装饰网，可以制造长孔、圆孔、方孔、三角孔、五角孔、六角孔、八字孔、
 									十字孔、梅花孔、工字孔等。
@@ -100,7 +100,7 @@
 								<section class="col1 pad_left1">
 									<h2 class="color2"><strong>5</strong><span>仿石材、木纹铝板</span></h2>
 									<div class="pad_bot1">
-										<figure><img width="264" height="264" src="images/product/5.jpg" alt="仿石材、木纹铝板"></figure>
+										<figure><img width="264" height="196" src="images/product/5.jpg" alt="仿石材、木纹铝板"></figure>
 									</div>
 									仿石材、木纹材料是由铝单板进行氟碳或粉末喷涂生产出来的，其具有以下特点：1、重量轻，安装方便；2、造价低，加工方便；
 									3、色彩可选性广；4、颜色一致性强，避免色差；5、加工形状多样性（可加工成平面或弧面等）6、耐候性和抗紫外线能力强，
@@ -110,7 +110,7 @@
 								<section class="col1 pad_left1">
 									<h2 class="color3"><strong>6</strong><span>造型铝板</span></h2>
 									<div class="pad_bot1">
-										<figure><img width="264" height="264" src="images/product/6.jpg" alt="造型铝板"></figure>
+										<figure><img width="264" height="196" src="images/product/6.jpg" alt="造型铝板"></figure>
 									</div>
 									公司是广州铝单板厂家，厂址在佛山，为客户生产定制各种铝单板、造型铝单板。
 									<a href="<?=$base_url; ?>Product.php" class="button1 color3">更多</a>
