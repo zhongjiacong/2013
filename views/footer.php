@@ -1,0 +1,28 @@
+<!-- footer -->
+<footer>
+	<div class="wrapper">
+		<a href="<?=$base_url; ?>index.php" id="footer_logo"><span>ZhongLv</span>Decorative Materials</a>
+		<ul id="icons">
+			<li><a href="http://zhonglvzs.taobao.com" class="normaltip" title="进入淘宝店铺" target="_blank">
+				<img src="images/icon1.gif" alt="淘宝"></a></li>
+			<li><a href="tencent://message/?uin=172367155&amp;Site=http://zhonglvzs.com&amp;Menu=yes" class="normaltip" title="腾讯QQ聊天">
+				<img border="0" src="http://pub.idqqimg.com/qconn/wpa/button/button_10.gif" alt="腾讯QQ聊天"></a></li>
+		</ul>
+	</div>
+	<div class="wrapper">
+		<nav>
+			<ul id="footer_menu">
+				<?=$onpage1?'<li class="active">':'<li>'; ?><a href="<?=$base_url; ?>index.php">Home</a></li>
+				<?=$onpage2?'<li class="active">':'<li>'; ?><a href="<?=$base_url; ?>Product.php">Our Product</a></li>
+				<?=$onpage3?'<li class="active">':'<li>'; ?><a href="<?=$base_url; ?>News.php">News &amp; Press</a></li>
+				<?=$onpage4?'<li class="active">':'<li>'; ?><a href="<?=$base_url; ?>Cases.php">Project Cases</a></li>
+				<?=$onpage5?'<li class="end active">':'<li class="end">'; ?><a href="<?=$base_url; ?>Contact.php">Contact</a></li>
+			</ul>
+		</nav>
+		<div class="tel"><?=$phone_number; ?></div>
+	</div>
+	<div id="footer_text">
+		All rights reserved by <a rel="nofollow" href="http://www.zhonglvzs.com/" target="_blank">&copy; zhonglvzs.com</a>
+	</div>
+</footer>
+<!-- / footer -->
