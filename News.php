@@ -10,8 +10,6 @@
 	<meta name="keywords" content="<?=$keywords; ?>" />
 	<meta name="description" content="<?=$description; ?>" />
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
-	<link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
 	<script type="text/javascript" src="js/jquery-1.6.js"></script>
 	<script type="text/javascript" src="js/cufon-yui.js"></script>
