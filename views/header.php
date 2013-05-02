@@ -6,9 +6,9 @@
 			<div id="top_tel">
 				<div id="top_icons">
 					<ul>
-						<li><a href="http://zhonglvzs.taobao.com" class="normaltip" title="进入淘宝店铺" target="_blank">
+						<li><a href="http://zhonglvzs.taobao.com" title="进入淘宝店铺" target="_blank">
 							<img src="images/icon1.gif" alt="淘宝"></a></li>
-						<li><a href="tencent://message/?uin=172367155&amp;Site=http://zhonglvzs.com&amp;Menu=yes" class="normaltip" title="腾讯QQ聊天">
+						<li><a href="tencent://message/?uin=172367155&amp;Site=http://zhonglvzs.com&amp;Menu=yes" title="腾讯QQ聊天">
 							<img border="0" src="http://pub.idqqimg.com/qconn/wpa/button/button_10.gif" alt="腾讯QQ聊天"></a></li>
 					</ul>
 				</div>

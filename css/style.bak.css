@@ -609,35 +609,6 @@ header {
 .list1 .color3 a {
 	background-position: 0 -49px
 }
-/*--- tabs begin ---*/
-.tabs {
-}
-
-.tabs ul.nav {
-	padding: 27px 0 27px 2px;
-	overflow: hidden
-}
-
-.tabs ul.nav li {
-	float: left;
-	padding-left: 31px
-}
-
-.tabs ul.nav li a {
-	font-size: 35px;
-	color: #ddd9cf;
-	font-weight: 400;
-	text-decoration: none;
-	line-height: 1.2em;
-	letter-spacing: -1px
-}
-
-.tabs ul.nav .selected a, .tabs ul.nav a:hover {
-	color: #ffc11e
-}
-
-.tabs .tab-content {
-}
 /*--- tabs end ---*/
 .address {
 	float: left;
