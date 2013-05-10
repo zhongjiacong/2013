@@ -231,6 +231,12 @@ strong {
 /* ============================= header ====================== */
 header {
 	margin-bottom: 10px;
+	background: url(../images/menu_line.gif) 0 -10px repeat-x;
+}
+
+header .wrapper {
+	width: 940px;
+	margin: 0 auto;
 }
 
 #logo {

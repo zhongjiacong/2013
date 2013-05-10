@@ -25,8 +25,8 @@
 </head>
 <body id="page1">
 	<div class="body">
+		<?php require 'views/header.php'; ?>
 		<div class="main">
-			<?php require 'views/header.php'; ?>
 			<!-- content -->
 			<article id="content">
 				<div class="slider">
