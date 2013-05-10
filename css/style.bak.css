@@ -57,6 +57,10 @@ embed {
 /* index-2.html */
 /* index-3.html */
 /* index-4.html */
+#page1 .col1 p {
+	padding: 0;
+	text-indent: 2em;
+}
 #page3 .col1 {
 	width: 870px
 }
@@ -407,10 +411,6 @@ header .wrapper {
 	padding-left: 26px
 }
 
-.pad_left2 {
-	padding-left: 36px
-}
-
 .pad_bot1 {
 	padding-bottom: 14px
 }
@@ -494,16 +494,16 @@ header .wrapper {
 }
 
 .button1:hover {
-	background: #ffb919;
+	background: #94c932;
 	color: #fff
 }
 
 .button1.color2 {
-	color: #dddad1
+	color: #dddad1;
 }
 
 .button1.color2:hover {
-	background: #94c932;
+	background: #ffb919;
 	color: #fff
 }
 
@@ -532,11 +532,16 @@ header .wrapper {
 .quot {
 	margin-top: 17px;
 	float: left;
-	margin-left: 94px;
-	padding: 12px 0 17px 41px;
+	margin-left: 34px;
+	padding: 12px 34px 17px 41px;
 	font-style: italic;
 	background: url(../images/quot1.png) 0 0 no-repeat;
-	width: 570px
+	width: 660px;
+}
+
+.quot p {
+	padding: 0px;
+	text-indent: 2em;
 }
 
 .quot img {

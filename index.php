@@ -51,9 +51,9 @@
 						</li>
 					</ul>
 					<ul class="pagination">
-						<li id="banner1"><a href="#">品牌<span>创建</span></a></li>
-						<li id="banner2"><a href="#">技术<span>可靠</span></a></li>
-						<li id="banner3"><a href="#">服务<span>真诚</span></a></li>
+						<li id="banner1"><a href="#">产品<span>优质</span></a></li>
+						<li id="banner2"><a href="#">技术<span>精湛</span></a></li>
+						<li id="banner3"><a href="#">服务<span>细心</span></a></li>
 					</ul>
 				</div>
 				<div class="wrapper">
@@ -61,77 +61,50 @@
 						<div class="line1">
 							<div class="line2 wrapper">
 								<section class="col1">
-									<h2><strong>1</strong><span>幕墙铝板</span></h2>
+									<h2><strong>1</strong><span>产品介绍</span></h2>
 									<div class="pad_bot1">
-										<figure><img width="264" height="196" src="images/product/1.jpg" alt="幕墙铝板"></figure>
+										<figure><img width="254" height="148" src="images/index/1.jpg" alt="产品介绍"></figure>
 									</div>
-									铝单板是采用优质铝合金板材为基材，再经过数控折弯等技术成型，表面喷涂装饰性涂料的一种新型幕墙材料。
+									<p>中稆装饰材料主要为建筑工程定制供应铝装材料，产品覆盖铝幕墙、蜂窝铝板、铝单板、冲孔铝板、双曲铝板、
+									和铝方通、铝扣板、铝格栅等铝天花产品，真诚为客户提供优质产品，竭力为客户解决工程难题。</p>
 									<a href="<?=$base_url; ?>Product.php" class="button1">更多</a>
 								</section>
 								<section class="col1 pad_left1">
-									<h2 class="color2"><strong>2</strong><span>双曲铝单板</span></h2>
+									<h2 class="color2"><strong>2</strong><span>新闻公告</span></h2>
 									<div class="pad_bot1">
-										<figure><img width="264" height="196" src="images/product/2.jpg" alt="双曲铝单板"></figure>
+										<figure><img width="254" height="148" src="images/index/2.jpg" alt="新闻公告"></figure>
 									</div>
-									双曲铝单板造型奇特、工艺复杂，要求其生产设备必须相当精湛，我司自行研制发明了专业的生产设备及生产技术，
-									可按照客户要求制定详细方案，定制任意尺寸双曲面、球形面，制造出独特美观的立体造型。
-									<a href="<?=$base_url; ?>Product.php" class="button1 color2">更多</a>
+									<p>帮助客户了解我们公司报价流程，一般我们会根据您对产品规格、颜色、形状等要求提供一个常规报价，
+									并在参考设计图纸后给您一个较准确的价格。另外，将介绍一些与产品安装，铝装材料咨询动态相关的信息。</p>
+									<a href="<?=$base_url; ?>News.php" class="button1 color2">更多</a>
 								</section>
 								<section class="col1 pad_left1">
-									<h2 class="color3"><strong>3</strong><span>蜂窝铝板</span></h2>
+									<h2 class="color3"><strong>3</strong><span>工程案例</span></h2>
 									<div class="pad_bot1">
-										<figure><img width="264" height="196" src="images/product/3.jpg" alt="蜂窝铝板"></figure>
+										<figure><img width="254" height="148" src="images/index/3.jpg" alt="工程案例"></figure>
 									</div>
-									采用热压成型技术，因铝皮和蜂窝间的高热传导值，内外铝皮的热胀冷缩同步；蜂窝铝皮上有小孔，使板内气体可以自由流动。
-									内层为特制的六边形铝蜂窝，作为粘附在夹层结构中的芯板，在切向上承受压力。
-									<a href="<?=$base_url; ?>Product.php" class="button1 color3">更多</a>
-								</section>
-							</div>
-							<div class="line2 wrapper">
-								<section class="col1">
-									<h2><strong>4</strong><span>冲孔铝板</span></h2>
-									<div class="pad_bot1">
-										<figure><img width="264" height="196" src="images/product/4.jpg" alt="冲孔铝板"></figure>
-									</div>
-									即铝板冲孔网，冲孔网，铝板冲孔板，隔音网，冲孔装饰网，可以制造长孔、圆孔、方孔、三角孔、五角孔、六角孔、八字孔、
-									十字孔、梅花孔、工字孔等。
-									<a href="<?=$base_url; ?>Product.php" class="button1">更多</a>
-								</section>
-								<section class="col1 pad_left1">
-									<h2 class="color2"><strong>5</strong><span>仿石材、木纹铝板</span></h2>
-									<div class="pad_bot1">
-										<figure><img width="264" height="196" src="images/product/5.jpg" alt="仿石材、木纹铝板"></figure>
-									</div>
-									仿石材、木纹材料是由铝单板进行氟碳或粉末喷涂生产出来的，其具有以下特点：1、重量轻，安装方便；2、造价低，加工方便；
-									3、色彩可选性广；4、颜色一致性强，避免色差；5、加工形状多样性（可加工成平面或弧面等）6、耐候性和抗紫外线能力强，
-									有优异的耐酸碱性；7、抗脏、自洁能力强。
-									<a href="<?=$base_url; ?>Product.php" class="button1 color2">更多</a>
-								</section>
-								<section class="col1 pad_left1">
-									<h2 class="color3"><strong>6</strong><span>造型铝板</span></h2>
-									<div class="pad_bot1">
-										<figure><img width="264" height="196" src="images/product/6.jpg" alt="造型铝板"></figure>
-									</div>
-									公司是广州铝单板厂家，厂址在佛山，为客户生产定制各种铝单板、造型铝单板。
-									<a href="<?=$base_url; ?>Product.php" class="button1 color3">更多</a>
+									<p>曾为许多大型工程项目设计、生产并供应各类铝装材料。其中一些工程中有部分产品加工生产难度大、外观质量要求高，
+									中稆凭借雄厚的技术实力和质量保证，经过严格审批和层层筛选，成为这些工程项目铝装材料的指定生产供应商。</p>
+									<a href="<?=$base_url; ?>Cases.php" class="button1 color3">更多</a>
 								</section>
 							</div>
 						</div>
 					</div>	
 				</div>
 				<div class="wrapper">
-					<h3>服务宗旨</h3>
-					<p class="quot">
-						广州市中稆装饰材料有限公司（下简称“中稆”）是一家集设计、生产、加工于一身的专业铝装材料生产加工的现代型企业。主营产品有：
-						铝单板、蜂窝板、冲孔板、异型板等。公司规模较大，设备完善，是一家充满创造力和行动力的企业。
-						<br />中稆成立于2007年，现已拥有员工数百人，并拥有一个善于解决工程难题的技术团队；同时引进了先进的数控钣金加工设备、
-						自动喷涂生产线。对技术人才和先进设备的重视是中稆为客户提供高质量产品的基本保证，至今中稆已为数十个大型工程项目提供优质铝板。
-						<br />中稆始终秉持“诚信行天下，质量创品牌”、“务实创新”、“不求最好只求更好”的品牌理念，视信誉和质量为企业的生命，
+					<h3>企业介绍</h3>
+					<div class="quot">
+						<p>广州市中稆装饰材料有限公司（下简称“中稆”）是一家集设计、生产、加工于一身的专业铝装材料生产加工的现代型企业。主营产品有：
+						铝单板、蜂窝板、冲孔板、异型板等。公司规模较大，设备完善，是一家充满创造力和行动力的企业。</p>
+						<p>中稆成立于2007年，现已拥有员工数百人，并拥有一个善于解决工程难题的技术团队；同时引进了先进的数控钣金加工设备、
+						自动喷涂生产线。对技术人才和先进设备的重视是中稆为客户提供高质量产品的基本保证，至今中稆已为数十个大型工程项目提供优质铝板。</p>
+						<p>中稆始终秉持“诚信行天下，质量创品牌”、“务实创新”、“不求最好只求更好”的品牌理念，视信誉和质量为企业的生命，
 						真诚为客户提供优质产品，竭力为客户解决工程难题。持精诚兢业之心，怀勤俭奋发之志，积极进取，精益求精，
-						产品通过了国家和地区的各种认证及得到了市场的认可。
-						<br />中稆——用诚信赢得信誉，用质量打造品牌。我们将与时俱进，与广大客户一起共创行业更加美好的未来。
-						<img width="30" height="30" src="images/quot2.png" alt="引号">
-					</p>
+						产品通过了国家和地区的各种认证及得到了市场的认可。</p>
+						<p>中稆——用诚信赢得信誉，用质量打造品牌。我们将与时俱进，与广大客户一起共创行业更加美好的未来。
+						<img width="30" height="30" src="images/quot2.png" alt="引号"></p>
+					</div>
+					<br />
 				</div>
 			</article>
 			<!-- / content -->
