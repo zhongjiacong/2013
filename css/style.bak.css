@@ -98,9 +98,9 @@ mark, rp, rt, ruby, summary, time {
 }
 /* Global properties ======================================================== */
 body {
-	background: url(../images/bg.jpg) top center repeat;
+	background: url(../images/bg.png) top center repeat;
 	border: 0;
-	font: 14px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font: 14px/1.5 Tahoma, Helvetica, Arial,"MicroSoft YaHei", "宋体b8b\4f53", sans-serif;
 	color: #575652;
 	line-height: 22px
 }
@@ -133,8 +133,8 @@ body {
 	width: 940px
 }
 
-.body1 {
-	background: url(../images/bg_top.gif) top repeat-x
+.body {
+	background: url(../images/bg.png);
 }
 /* ============================= main layout ====================== */
 a {
@@ -230,6 +230,7 @@ strong {
 }
 /* ============================= header ====================== */
 header {
+	margin-bottom: 10px;
 }
 
 #logo {
@@ -241,8 +242,9 @@ header {
 }
 
 #menu {
+	background: url(../images/header_bg.png);
 	float: right;
-	padding: 4px 0 12px 0
+	margin: 4px 0 12px 0;
 }
 
 #menu li {
@@ -253,36 +255,19 @@ header {
 #menu li a {
 	display: block;
 	padding: 0 20px;
-	height: 42px;
-	font-size: 18px;
+	height: 36px;
+	font-size: 16px;
 	color: #dad6cc;
-	line-height: 42px;
+	line-height: 36px;
 	text-transform: uppercase;
 	text-decoration: none;
-	font-weight: 400
+	font-weight: 400;
+	text-shadow: 1px 1px #0b6591;
 }
 
 #menu li a:hover, #menu #menu_active a {
-	background: url(../images/menu_active.gif) top repeat-x;
-	color: #fff
-}
-
-#top_nav {
-	float: right;
-	padding: 40px 37px 0 391px
-}
-
-#top_nav li {
-	float: left;
-	padding: 4px 26px 5px 0;
-	margin-right: 25px;
-	background: url(../images/top_line.png) right 0 no-repeat
-}
-
-#top_nav .end {
-	padding-right: 0;
-	margin-right: 0;
-	background: none
+	color: #003e5e;
+	text-shadow: 1px 1px #17a8d8;
 }
 
 #top_tel {
@@ -525,32 +510,6 @@ header {
 	color: #fff
 }
 
-.button2 {
-	display: inline-block;
-	font-size: 15px;
-	color: #fff;
-	text-transform: uppercase;
-	text-decoration: none;
-	padding: 0 21px;
-	height: 36px;
-	line-height: 34px;
-	font-weight: 400;
-	background: url(../images/button1_bg.gif) top repeat-x;
-	letter-spacing: -1px
-}
-
-.button2.color2 {
-	background-image: url(../images/button2_bg.gif)
-}
-
-.button2.color3 {
-	background-image: url(../images/button3_bg.gif)
-}
-
-.button2:hover {
-	background: #000
-}
-
 .color0 {
 	color: #616161;
 	text-decoration: none
@@ -666,19 +625,19 @@ footer {
 }
 
 .tel {
+	font-family: Arial;
 	float: right;
 	margin-top: -1px;
-	background: url(../images/bot_icon.gif) 0 15px no-repeat;
+	background: url(../images/bot_icon.gif) 0 12px no-repeat;
 	padding: 0 0 0 38px;
-	font-size: 35px;
+	font-size: 32px;
 	line-height: 1.2em;
 	color: #dedad1;
 	letter-spacing: -2px;
-	font-weight: 300
 }
 
 .tel span {
-	color: #ffc11e
+	color: #ffc11e;
 }
 
 footer nav {

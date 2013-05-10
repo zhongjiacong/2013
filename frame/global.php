@@ -1,5 +1,5 @@
 <?php
-$phone_number = '<span>+1 348</span>020 59 03';
+$phone_number = '<span>+1 30</span>60 744 199';
 $base_url = 'http://'.$_SERVER['SERVER_NAME'].'/2013/';
 
 // 将url解析成数组

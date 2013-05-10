@@ -24,7 +24,7 @@
 	</script>
 </head>
 <body id="page5">
-	<div class="body1">
+	<div class="body">
 		<div class="main">
 			<?php require 'views/header.php'; ?>
 			<!-- content -->
