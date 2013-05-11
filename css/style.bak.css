@@ -61,6 +61,7 @@ embed {
 	padding: 0;
 	text-indent: 2em;
 }
+
 #page3 .col1 {
 	width: 870px
 }
@@ -430,7 +431,8 @@ header .wrapper {
 .box1 {
 	background: url(../images/bg_box1.jpg) top center no-repeat #dad6cc;
 	border-top: 5px solid #cdc8bc;
-	padding: 15px 30px 29px
+	padding: 15px 30px 29px;
+	overflow: hidden;
 }
 
 .box1 strong {
@@ -699,55 +701,53 @@ footer nav {
 #footer_text a:hover {
 	text-decoration: underline
 }
-/* ============================= forms ============================= */
-#ContactForm {
-	width: 585px;
-	overflow: hidden;
-	padding-bottom: 36px
-}
-
-#ContactForm .wrapper {
-	height: 26px
-}
-
-#ContactForm span {
+/* ============================= product type ============================= */
+#type_leftpart {
+	width: 180px;
 	float: left;
-	width: 105px;
-	line-height: 24px
+	padding-right: 10px;
 }
 
-#ContactForm .textarea_box {
+#type_leftpart ul li {
+	padding: 3px;
+}
+
+#type_rightpart {
+	width: 680px;
+	float: left;
+	padding-left: 10px;
+}
+
+#type_rightpart p {
+	text-indent: 2em;
+}
+
+#type_rightpart p img {
+	border: 5px solid #DDD;
+	margin: 0 15px 15px 15px;
+	float: right;
+}
+
+#type_leftpart .type_title, #type_rightpart .type_title {
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.type_list_item {
+	width: 170px;
+	float: left;
+	padding: 10px 0;
+}
+
+.type_list_item div:nth-child(1) {
+	padding: 0 15px;
+}
+
+.type_list_item div:nth-child(1) img {
+	border: 5px solid #DDD;
+}
+
+.type_list_item div:nth-child(2) {
 	width: 100%;
-	overflow: hidden;
-	min-height: 103px;
-	padding-bottom: 5px
-}
-
-#ContactForm {
-}
-
-#ContactForm a {
-	margin-left: 10px;
-	width: 72px;
 	text-align: center;
-	float: right
-}
-
-#ContactForm .input {
-	width: 470px;
-	background: #000;
-	padding: 3px 5px;
-	color: #575652;
-	font: 12px "Trebuchet MS", Arial, Helvetica, sans-serif;
-	height: 14px
-}
-
-#ContactForm textarea {
-	overflow: auto;
-	width: 470px;
-	background: #000;
-	padding: 3px 5px;
-	color: #575652;
-	font: 12px "Trebuchet MS", Arial, Helvetica, sans-serif;
-	height: 91px
 }

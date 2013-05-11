@@ -6,15 +6,16 @@ $base_url = 'http://'.$_SERVER['SERVER_NAME'].'/2013/';
 $url_arr = parse_url('http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI']);
 
 // 页面相关元素
-if($url_arr['path'] == '/2013/Product.php')
+if($url_arr['path'] == '/2013/products.php')
 	$onpage2 = true;
-elseif($url_arr['path'] == '/2013/News.php')
+elseif($url_arr['path'] == '/2013/news.php')
 	$onpage3 = true;
-elseif($url_arr['path'] == '/2013/Cases.php')
+elseif($url_arr['path'] == '/2013/cases.php')
 	$onpage4 = true;
-elseif($url_arr['path'] == '/2013/Contact.php')
+elseif($url_arr['path'] == '/2013/contact.php')
 	$onpage5 = true;
 else
 	$onpage1 = true;
 
+// 产品分类
 

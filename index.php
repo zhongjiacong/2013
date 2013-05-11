@@ -67,7 +67,7 @@
 									</div>
 									<p>中稆装饰材料主要为建筑工程定制供应铝装材料，产品覆盖铝幕墙、蜂窝铝板、铝单板、冲孔铝板、双曲铝板、
 									和铝方通、铝扣板、铝格栅等铝天花产品，真诚为客户提供优质产品，竭力为客户解决工程难题。</p>
-									<a href="<?=$base_url; ?>Product.php" class="button1">更多</a>
+									<a href="<?=$base_url; ?>products.php" class="button1">更多</a>
 								</section>
 								<section class="col1 pad_left1">
 									<h2 class="color2"><strong>2</strong><span>新闻公告</span></h2>
@@ -76,7 +76,7 @@
 									</div>
 									<p>帮助客户了解我们公司报价流程，一般我们会根据您对产品规格、颜色、形状等要求提供一个常规报价，
 									并在参考设计图纸后给您一个较准确的价格。另外，将介绍一些与产品安装，铝装材料咨询动态相关的信息。</p>
-									<a href="<?=$base_url; ?>News.php" class="button1 color2">更多</a>
+									<a href="<?=$base_url; ?>news.php" class="button1 color2">更多</a>
 								</section>
 								<section class="col1 pad_left1">
 									<h2 class="color3"><strong>3</strong><span>工程案例</span></h2>
@@ -85,7 +85,7 @@
 									</div>
 									<p>曾为许多大型工程项目设计、生产并供应各类铝装材料。其中一些工程中有部分产品加工生产难度大、外观质量要求高，
 									中稆凭借雄厚的技术实力和质量保证，经过严格审批和层层筛选，成为这些工程项目铝装材料的指定生产供应商。</p>
-									<a href="<?=$base_url; ?>Cases.php" class="button1 color3">更多</a>
+									<a href="<?=$base_url; ?>cases.php" class="button1 color3">更多</a>
 								</section>
 							</div>
 						</div>

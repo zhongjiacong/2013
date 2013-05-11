@@ -19,10 +19,10 @@
 		<nav>
 			<ul id="menu">
 				<?=$onpage1?'<li id="menu_active">':'<li>'; ?><a href="<?=$base_url; ?>index.php">主页</a></li>
-				<?=$onpage2?'<li id="menu_active">':'<li>'; ?><a href="<?=$base_url; ?>Product.php">产品介绍</a></li>
-				<?=$onpage3?'<li id="menu_active">':'<li>'; ?><a href="<?=$base_url; ?>News.php">新闻公告</a></li>
-				<?=$onpage4?'<li id="menu_active">':'<li>'; ?><a href="<?=$base_url; ?>Cases.php">工程案例</a></li>
-				<?=$onpage5?'<li id="menu_active">':'<li>'; ?><a href="<?=$base_url; ?>Contact.php">联系我们</a></li>
+				<?=$onpage2?'<li id="menu_active">':'<li>'; ?><a href="<?=$base_url; ?>products.php">产品介绍</a></li>
+				<?=$onpage3?'<li id="menu_active">':'<li>'; ?><a href="<?=$base_url; ?>news.php">新闻公告</a></li>
+				<?=$onpage4?'<li id="menu_active">':'<li>'; ?><a href="<?=$base_url; ?>cases.php">工程案例</a></li>
+				<?=$onpage5?'<li id="menu_active">':'<li>'; ?><a href="<?=$base_url; ?>contact.php">联系我们</a></li>
 			</ul>
 		</nav>
 	</div>

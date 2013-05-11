@@ -44,7 +44,7 @@
 								</strong>
 								广东广州<br>
 								510360<br>
-								13480205903<br>
+								13060744199<br>
 								广州市芳村大道西<br>
 								佛山市南海区里水镇<br>
 								<a href="mailto:zhongjiacong@gmail.com">zhongjiacong@gmail.com</a>
