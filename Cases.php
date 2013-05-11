@@ -67,8 +67,8 @@
 								</section>
 							</div>
 						</div>
-						<div class="line1">
-							<h2><strong>集</strong>团<span>工程案例</span></h2>
+						<div>
+							<h2><strong>所</strong>在<span>集团工程案例</span></h2>
 							<img style="margin: 40px;" src="images/cases/project_cases.png" alt="集团工程案例">
 						</div>
 					</div>	
