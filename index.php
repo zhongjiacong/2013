@@ -70,7 +70,7 @@
 									<a href="<?=$base_url; ?>products.php" class="button1">更多</a>
 								</section>
 								<section class="col1 pad_left1">
-									<h2 class="color2"><strong>2</strong><span>新闻公告</span></h2>
+									<h2 class="color2"><strong>2</strong><span>新闻资讯</span></h2>
 									<div class="pad_bot1">
 										<figure><img width="254" height="148" src="images/index/2.jpg" alt="新闻公告"></figure>
 									</div>

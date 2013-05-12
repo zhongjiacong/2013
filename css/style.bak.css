@@ -732,6 +732,8 @@ footer nav {
 
 #type_rightpart p {
 	text-indent: 2em;
+	padding: 0px;
+	margin: 0px;
 }
 
 #type_rightpart p img {
@@ -753,7 +755,33 @@ footer nav {
 }
 
 #type_rightpart #news_detail {
+	margin-top: 25px;
+}
+
+#type_rightpart #news_time {
 	margin-top: 10px;
+	text-align: center;
+}
+
+#page {
+	margin-top: 15px;
+	text-align: center;
+}
+
+#page a {
+	color: #666;
+	text-decoration: none;
+}
+
+#page span {
+	padding: 3px;
+	background: #eee;
+	border: 1px solid;
+}
+
+#page .page_active {
+	color: #ccc;
+	background: #eee;
 }
 
 .type_list_item {
