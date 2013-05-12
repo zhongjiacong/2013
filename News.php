@@ -27,6 +27,7 @@
 		array_shift($news_item);
 		$news_category_arr[$categorytemp][$news_key] = $news_item;
 	}
+	print_r($news_category_arr);
 	
 	// 页码
 	$standard_page_num = 10;
