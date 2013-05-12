@@ -19,6 +19,7 @@
 	foreach($news_list[0] as $news_key=>$news_item) {
 		$news_counter[$news_key] = count($news_tree[$news_item]);
 	}
+	print_r($news_counter);
 	
 	// 按类型将新闻资讯分类
 	$news_category_arr = array();
