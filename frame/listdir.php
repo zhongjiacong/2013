@@ -26,7 +26,8 @@ class listdir{
 					$this->depth+=1;
 					$this->getlist($path);
 				}
-				$this->list[$this->depth][] = $path;
+				if(!preg_match('/README/',$item))
+					$this->list[$this->depth][] = $path;
 			}
 		}
 		$this->depth-=1;
