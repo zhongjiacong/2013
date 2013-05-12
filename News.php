@@ -27,7 +27,6 @@
 		array_shift($news_item);
 		$news_category_arr[$categorytemp][$news_key] = $news_item;
 	}
-	print_r($news_category_arr);
 	
 	// 页码
 	$standard_page_num = 10;
@@ -140,6 +139,7 @@
 								<?php elseif($_GET['category'] != null && $news_counter[$_GET['category']] != 0): ?>
 								<ul>
 									<?php
+									print_r($news_category_arr[$_GET['category']]);
 									// 获取当前页面的条目数
 									$news_list_current_page = array_slice($news_category_arr[$_GET['category']],
 										($current_page-1)*$standard_page_num,$standard_page_num);
