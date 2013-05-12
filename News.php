@@ -140,6 +140,11 @@
 								<ul>
 									<?php
 									// 获取当前页面的条目数
+									echo $_GET['category'].'<br />';
+									print_r($news_category_arr);
+									echo '<br />';
+									print_r($news_category_arr[$_GET['category']]);
+									echo '<br />';
 									$news_list_current_page = (count($news_category_arr[$_GET['category']]) == 0)?array():
 										array_slice($news_category_arr[$_GET['category']],
 											($current_page-1)*$standard_page_num,$standard_page_num);
