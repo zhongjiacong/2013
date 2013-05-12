@@ -19,7 +19,6 @@
 	foreach($news_list[0] as $news_key=>$news_item) {
 		$news_counter[$news_key] = count($news_tree[$news_item]);
 	}
-	print_r($news_counter);
 	
 	// 按类型将新闻资讯分类
 	$news_category_arr = array();
@@ -141,13 +140,7 @@
 								<ul>
 									<?php
 									// 获取当前页面的条目数
-									echo $_GET['category'].'<br />';
-									print_r($news_category_arr);
-									echo '<br />';
-									print_r($news_category_arr[$_GET['category']]);
-									echo '<br />';
-									$news_list_current_page = (count($news_category_arr[$_GET['category']]) == 0)?array():
-										array_slice($news_category_arr[$_GET['category']],
+									$news_list_current_page = array_slice($news_category_arr[$_GET['category']],
 											($current_page-1)*$standard_page_num,$standard_page_num);
 									foreach($news_list_current_page as $news_key=>$news_item):
 										// 组织时间字符串
