@@ -66,7 +66,8 @@ class listdir{
 				$path=$dir."/".$item;
 				// 先收录当前路径到tree数组中
 				// 组成一棵树
-				$this->tree[$dir][] = $path;
+				if(!preg_match('/README/',$item))
+					$this->tree[$dir][] = $path;
 				// 递归
 				if(is_dir($path))
 					$this->gettree($path);
