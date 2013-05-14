@@ -1,19 +1,19 @@
 <?php
 
-class listdir{
+class listdir {
 	var $depth;
 	var $dirname;
 	var $list;
 	var $tree;
 
-	function listdir($dir){
-		$this->dirname=$dir;
-		$this->depth=0;
+	function listdir($dir) {
+		$this->dirname = $dir;
+		$this->depth = 0;
 		$this->tree = array();
 	}
 
 	// 把结果保存进多维数组
-	function getlist($dir=''){
+	function getlist($dir='') {
 		// 未传参时默认使用对象初始化时的路径
 		if($dir=='')
 			$dir=$this->dirname;

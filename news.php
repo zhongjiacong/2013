@@ -2,6 +2,8 @@
 	require 'frame/global.php';
 	require 'frame/head.php';
 	require 'frame/listdir.php';
+	require 'frame/pager.php';
+	require 'frame/items.php';
 	
 	// 初始化新闻资讯的类型
 	$news_arr = array('公司新闻','公司公告','行业资讯','产品动态');
@@ -27,11 +29,6 @@
 		array_shift($news_item);
 		$news_category_arr[$categorytemp][$news_key] = $news_item;
 	}
-	
-	// 页码
-	$standard_page_num = 10;
-	// 当前页面
-	$current_page = ($_GET['page'] == null)?1:$_GET['page'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -79,129 +76,23 @@
 									新闻资讯
 								</div>
 								<br />
-								<?php if($_GET['category'] == null): ?>
-								<ul>
-									<?php
-									// 获取当前页面的条目数
-									$news_list_current_page = array_slice($news_list_1,($current_page-1)*$standard_page_num,$standard_page_num);
-									foreach($news_list_current_page as $news_key=>$news_item):
-										// 组织时间字符串
-										$news_timestr = $news_item['time']['year'].'/'.$news_item['time']['day'].'/'.
-											$news_item['time']['month'];
-										// 一项新闻内容的文件路径
-										$news_filepath = dirname(__FILE__).'/news/'.$news_item['category'].'/'.
-											implode('-',$news_item['time']).'/index.html';
-										// 读取新闻文件内容
-										$news_content = array();
-										$file_handle = fopen($news_filepath, "r");
-										while (!feof($file_handle)) {
-											$line = fgets($file_handle);
-											$news_content[] = $line;
-										}
-										fclose($file_handle);
-										// 一项新闻内容的链接地址
-										$news_item_url = $base_url.'news.php?time='.implode('-',$news_item['time']);
-									?>
-									<li>
-										<a href="<?=$news_item_url; ?>">
-										【<?=$news_arr[$news_item['category']]; ?>】<?=trim(strip_tags($news_content[0])); ?></a>
-										<span><?=$news_timestr; ?></span>
-									</li>
-									<?php endforeach; ?>
-								</ul>
-								<div id="page">
-									<?php
-									// 总条数
-									$sum_item = count($news_list_1);
-									// 总页数
-									$sum_page = ceil($sum_item/$standard_page_num);
-									if(count($_SERVER['argv']) == 0 || (count($_SERVER['argv']) == 1 && $_GET['page'] != null)):
-										
-										if($current_page != 1): ?>
-										<a href="<?=$base_url; ?>news.php?page=<?=$current_page-1; ?>"><span>上一页</span></a>
-										<?php endif;
-										
-										for($i = 1; $i <= $sum_page; $i++):
-											if($current_page == $i): ?>
-											<span class="page_active"><?=$i; ?></span>
-											<?php else: ?>
-											<span><a href="<?=$base_url; ?>news.php?page=<?=$i; ?>"><?=$i; ?></a></span>
-											<?php endif;
-										endfor;
-										
-										if($current_page != $sum_page): ?>
-										<a href="<?=$base_url; ?>news.php?page=<?=$current_page+1; ?>"><span>下一页</span></a>
-										<?php endif;
-									
-									endif; ?>
-									共<?=$sum_item; ?>条 <?=$current_page; ?>/<?=$sum_page; ?>页
-								</div>
-								<?php elseif($_GET['category'] != null && $news_counter[$_GET['category']] != 0): ?>
-								<ul>
-									<?php
-									// 获取当前页面的条目数
-									$news_list_current_page = array_slice($news_category_arr[$_GET['category']],
-											($current_page-1)*$standard_page_num,$standard_page_num);
-									foreach($news_list_current_page as $news_key=>$news_item):
-										// 组织时间字符串
-										$news_timestr = $news_item['time']['year'].'/'.$news_item['time']['day'].'/'.
-											$news_item['time']['month'];
-										// 一项新闻内容的文件路径
-										$news_filepath = dirname(__FILE__).'/news/'.$_GET['category'].'/'.
-											implode('-',$news_item['time']).'/index.html';
-										// 读取新闻文件内容
-										$news_content = array();
-										$file_handle = fopen($news_filepath, "r");
-										while (!feof($file_handle)) {
-											$line = fgets($file_handle);
-											$news_content[] = $line;
-										}
-										fclose($file_handle);
-										// 一项新闻内容的链接地址
-										$news_item_url = $base_url.'news.php?time='.implode('-',$news_item['time']);
-									?>
-									<li>
-										<a href="<?=$news_item_url; ?>">
-										【<?=$news_arr[$_GET['category']]; ?>】<?=trim(strip_tags($news_content[0])); ?></a>
-										<span><?=$news_timestr; ?></span>
-									</li>
-									<?php endforeach; ?>
-								</ul>
-								<div id="page">
-									<?php
-									// 总条数
-									$sum_item = count($news_category_arr[$_GET['category']]);
-									// 总页数
-									$sum_page = ceil($sum_item/$standard_page_num);
-									if(count($_SERVER['argv']) > 1 || (count($_SERVER['argv']) == 1 && $_GET['category'] != null)):
-										
-										if($current_page != 1): ?>
-										<a href="<?=$base_url; ?>news.php?category=<?=$_GET['category']; ?>&page=<?=$current_page-1; ?>">
-											<span>上一页</span></a>
-										<?php endif;
-										
-										for($i = 1; $i <= $sum_page; $i++):
-											if($current_page == $i): ?>
-											<span class="page_active"><?=$i; ?></span>
-											<?php else: ?>
-											<span><a href="<?=$base_url; ?>news.php?category=<?=$_GET['category']; ?>&page=<?=$i; ?>">
-												<?=$i; ?></a></span>
-											<?php endif;
-										endfor; ?>
-										
-										<?php if($current_page != $sum_page): ?>
-										<a href="<?=$base_url; ?>news.php?category=<?=$_GET['category']; ?>&page=<?=$current_page+1; ?>">
-											<span>下一页</span></a>
-										<?php endif;
-									
-									endif; ?>
-									共<?=$sum_item; ?>条 <?=$current_page; ?>/<?=$sum_page; ?>页
-								</div>
-								<?php else: ?>
-								<ul>
-									<li>暂无内容...</li>
-								</ul>
-								<?php endif;
+							<?php
+								if($_GET['category'] == null) {
+									$mypager = new pager(count($news_list_1));
+									$myitems = new items($news_arr,$news_list_1,
+										$mypager->getcurrentpage(),$mypager->getstandardpagenum());
+									$myitems->printitems();
+									$mypager->printpager();
+								}
+								elseif($_GET['category'] != null && $news_counter[$_GET['category']] != 0) {
+									$mypager = new pager(count($news_category_arr[$_GET['category']]));
+									$myitems = new items($news_arr,$news_category_arr[$_GET['category']],
+										$mypager->getcurrentpage(),$mypager->getstandardpagenum());
+									$myitems->printitems();
+									$mypager->printpager();
+								}
+								else
+									echo '<ul><li>暂无内容...</li></ul>';
 							else:
 								// 寻找匹配的文件
 								foreach($news_list[2] as $news_key=>$news_item):
@@ -241,7 +132,7 @@
 								$news_detail = str_replace('<img src="','<img src="'.str_replace('index.html','',$news_urlpath),$news_detail);
 								// 输出详细内容
 								echo $news_detail;
-								endif;
+							endif;
 							?>
 						</div>
 					</div>	
