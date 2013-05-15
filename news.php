@@ -4,9 +4,6 @@ require 'frame/head.php';
 require 'frame/listdir.php';
 require 'frame/pager.php';
 require 'frame/items.php';
-	
-// 初始化新闻资讯的类型
-$news_arr = array('公司新闻','公司公告','行业资讯','产品动态');
 
 // 初始化对象，并使用getlist方法获取文件路径树
 $news_dir = new listdir('news');

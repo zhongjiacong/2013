@@ -48,7 +48,8 @@ class listdir {
 												'month'=>$path_time[1],
 												'day'=>$path_time[2],
 												'hour'=>$path_time[3],
-												'minute'=>$path_time[4]
+												'minute'=>$path_time[4],
+												'second'=>$path_time[5]
 											)
 										);
 		}
