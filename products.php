@@ -65,7 +65,7 @@
 									<div class="type_list_item">
 										<div>
 											<a href="<?=$base_url; ?>products.php?type=<?=$product_key; ?>">
-												<img width="132" height="98" src="images/product/<?=$product_key; ?>.jpg" alt="<?=$product_type[$_GET['type']]; ?>">
+												<img width="132" height="98" src="images/product/<?=$product_key; ?>.jpg" alt="<?=$product_name; ?>">
 											</a>
 										</div>
 										<div>
@@ -83,6 +83,7 @@
 					<div class="wrapper">
 						<h3>定制产品</h3>
 						<div class="quot">
+							<div class="quot_left"></div>
 							<p>中稆生产的铝单板等幕墙材料美观大方、保温节能、重量轻、耐侯性好、易加工、耐冲击、防火性能好、易保养、颜色多等特点，
 							是目前现代化装饰的首选材料。</p>
 							<p>产品细节：铝单板表面处理方式多样，包括氟碳、滚涂、石纹、木纹、拉丝、聚酯、户内粉末、户外粉末、仿大理石、
