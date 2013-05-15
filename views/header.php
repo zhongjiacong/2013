@@ -1,4 +1,3 @@
-<!-- header -->
 <header>
 	<div class="wrapper">
 		<h1><a href="<?=$base_url; ?>index.php" id="logo">中稆装饰材料</a></h1>
@@ -28,4 +27,3 @@
 	</div>
 	<div class="ic">&copy; zhonglvzs.com</div>
 </header>
-<!-- / header -->

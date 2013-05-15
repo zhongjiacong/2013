@@ -1,7 +1,5 @@
-<?php
-	require 'frame/global.php';
-	require 'frame/head.php';
-?>
+<?php require 'frame/global.php';
+	require 'frame/head.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

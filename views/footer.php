@@ -1,4 +1,3 @@
-<!-- footer -->
 <footer>
 	<div class="wrapper">
 		<a href="<?=$base_url; ?>index.php" id="footer_logo"><span>ZhongLv</span>Decorative Materials</a>
@@ -25,4 +24,3 @@
 		All rights reserved by <a rel="nofollow" href="http://www.zhonglvzs.com/" target="_blank">&copy; zhonglvzs.com</a>
 	</div>
 </footer>
-<!-- / footer -->

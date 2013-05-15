@@ -1,5 +1,4 @@
 <?php
-
 class pager {
 	var $standard_page_num;
 	var $current_page;

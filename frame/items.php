@@ -1,5 +1,4 @@
 <?php
-
 class items {
 	var $news_arr;
 	var $content;

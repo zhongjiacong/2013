@@ -1,34 +1,34 @@
 <?php
-	require 'frame/global.php';
-	require 'frame/head.php';
-	require 'frame/listdir.php';
-	require 'frame/pager.php';
-	require 'frame/items.php';
+require 'frame/global.php';
+require 'frame/head.php';
+require 'frame/listdir.php';
+require 'frame/pager.php';
+require 'frame/items.php';
 	
-	// 初始化新闻资讯的类型
-	$news_arr = array('公司新闻','公司公告','行业资讯','产品动态');
-	
-	// 初始化对象，并使用getlist方法获取文件路径树
-	$news_dir = new listdir('news');
-	$news_list = $news_dir->getlist();
-	// 对所有类型的新闻资讯按时间排序
-	$news_list_1 = $news_dir->getpatharr($news_list[1]);
-	krsort($news_list_1);
-	
-	// 用于统计各个类型的数量
-	$news_tree = $news_dir->gettree();
-	$news_counter = array();
-	foreach($news_list[0] as $news_key=>$news_item) {
-		$news_counter[$news_key] = count($news_tree[$news_item]);
-	}
-	
-	// 按类型将新闻资讯分类
-	$news_category_arr = array();
-	foreach($news_list_1 as $news_key=>$news_item) {
-		$categorytemp = $news_item['category'];
-		array_shift($news_item);
-		$news_category_arr[$categorytemp][$news_key] = $news_item;
-	}
+// 初始化新闻资讯的类型
+$news_arr = array('公司新闻','公司公告','行业资讯','产品动态');
+
+// 初始化对象，并使用getlist方法获取文件路径树
+$news_dir = new listdir('news');
+$news_list = $news_dir->getlist();
+// 对所有类型的新闻资讯按时间排序
+$news_list_1 = $news_dir->getpatharr($news_list[1]);
+krsort($news_list_1);
+
+// 用于统计各个类型的数量
+$news_tree = $news_dir->gettree();
+$news_counter = array();
+foreach($news_list[0] as $news_key=>$news_item) {
+	$news_counter[$news_key] = count($news_tree[$news_item]);
+}
+
+// 按类型将新闻资讯分类
+$news_category_arr = array();
+foreach($news_list_1 as $news_key=>$news_item) {
+	$categorytemp = $news_item['category'];
+	array_shift($news_item);
+	$news_category_arr[$categorytemp][$news_key] = $news_item;
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
