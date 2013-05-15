@@ -69,7 +69,17 @@
 						</div>
 						<div>
 							<h2><strong>所</strong>在<span>集团工程案例</span></h2>
-							<img style="margin: 40px;" src="images/cases/project_cases.png" alt="集团工程案例">
+							<?php
+								$project_cases_arr = array('中央电视台新址大楼','合肥富世广场','河南焦作图书馆','京沪高铁（德州站）',
+															'琶洲国际会展中心','泉景鸿园商务大厦','山东高密体育馆','山东全运会馆',
+															'顺德喜来登大酒店','潍坊市青少年宫','西安新长安国际','云南西双版纳机场');
+							?>
+							<?php for($i = 0; $i < 12; $i++): ?>
+							<div id="project_cases">
+								<img width="149" height="99" src="images/cases/project_case<?=$i; ?>.png" alt="集团工程案例<?=$i; ?>">
+								<?=$project_cases_arr[$i]; ?>
+							</div>
+							<?php endfor; ?>
 						</div>
 					</div>	
 				</div>

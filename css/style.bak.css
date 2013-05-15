@@ -819,6 +819,19 @@ footer nav {
 	background: #eee;
 }
 
+#project_cases {
+	width: 149px;
+	height: 99px;
+	margin: 25px 35px;
+	float: left;
+	text-align: center;
+	line-height: 32px;
+}
+
+#project_cases img {
+	border: 3px solid #e6e6e6;
+}
+
 .type_list_item {
 	width: 170px;
 	float: left;
