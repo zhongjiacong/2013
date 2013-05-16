@@ -1,8 +1,6 @@
-<?php
-	require 'frame/global.php';
+<?php require 'frame/global.php';
 	require 'frame/head.php';
-	require 'frame/type.php';
-?>
+	require 'frame/type.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
