@@ -48,7 +48,7 @@ class items {
 				echo '<input type="checkbox" name="'.$news_item_category.'_'.implode('-',$news_item['time']).'" />'.
 					'<span>'.$news_timestr.'</span></li>';
 			}
-		echo '</ul><input type="submit" name="submit" value="删除" /></form>';
+		echo '</ul><br /><input type="submit" name="submit" value="删除" /></form><br />';
 	}
 	
 	function printitems() {
