@@ -40,9 +40,9 @@ class listdir {
 		$patharr = array();
 		foreach($oripatharr as $path_key=>$path_item) {
 			$path_arr = explode('/',$path_item);
-			$path_time = explode('-',$path_arr[2]);
+			$path_time = explode('-',$path_arr[count($path_arr) - 1]);
 			$patharr[implode('',$path_time)] = array(
-											'category'=>$path_arr[1],
+											'category'=>$path_arr[count($path_arr) - 2],
 											'time'=>array(
 												'year'=>$path_time[0],
 												'month'=>$path_time[1],
@@ -76,5 +76,30 @@ class listdir {
 			}
 		}
 		return $this->tree;
+	}
+	
+	function deldir($dir='') {
+		// 未传参时默认使用对象初始化时的路径
+		if($dir=='')
+			$dir=$this->dirname;
+		
+		//先删除目录下的文件：
+		$dh = opendir($dir);
+		while($file = readdir($dh)) {
+			if($file != "." && $file != "..") {
+				$fullpath = $dir."/".$file;
+				if(!is_dir($fullpath))
+					unlink($fullpath);
+				else
+					$this->deldir($fullpath);
+			}
+		}
+
+		closedir($dh);
+		
+		//删除当前文件夹：
+		if(rmdir($dir))
+			return true;
+		return false;
 	}
 }

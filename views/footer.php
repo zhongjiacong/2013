@@ -11,11 +11,12 @@
 	<div class="wrapper">
 		<nav>
 			<ul id="footer_menu">
-				<?=$onpage1?'<li class="active">':'<li>'; ?><a href="<?=$base_url; ?>index.php">Home</a></li>
-				<?=$onpage2?'<li class="active">':'<li>'; ?><a href="<?=$base_url; ?>products.php">Our Product</a></li>
-				<?=$onpage3?'<li class="active">':'<li>'; ?><a href="<?=$base_url; ?>news.php">News &amp; Press</a></li>
-				<?=$onpage4?'<li class="active">':'<li>'; ?><a href="<?=$base_url; ?>cases.php">Project Cases</a></li>
-				<?=$onpage5?'<li class="end active">':'<li class="end">'; ?><a href="<?=$base_url; ?>contact.php">Contact</a></li>
+				<?php for($i = 0; $i < 5; $i++): ?>
+					<?=($i < 4)?($on_page_arr[$i]?'<li class="active">':'<li>'):
+						($on_page_arr[$i]?'<li class="end active">':'<li class="end">'); ?>
+						<a href="<?=$base_url.$nav_arr[$i][0]; ?>.php"><?=$nav_arr[$i][1]; ?></a>
+					</li>
+				<?php endfor; ?>
 			</ul>
 		</nav>
 		<div class="tel"><?=$phone_number; ?></div>

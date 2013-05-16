@@ -17,11 +17,11 @@
 		</nav>
 		<nav>
 			<ul id="menu">
-				<?=$onpage1?'<li id="menu_active">':'<li>'; ?><a href="<?=$base_url; ?>index.php">首页</a></li>
-				<?=$onpage2?'<li id="menu_active">':'<li>'; ?><a href="<?=$base_url; ?>products.php">产品介绍</a></li>
-				<?=$onpage3?'<li id="menu_active">':'<li>'; ?><a href="<?=$base_url; ?>news.php">新闻资讯</a></li>
-				<?=$onpage4?'<li id="menu_active">':'<li>'; ?><a href="<?=$base_url; ?>cases.php">工程案例</a></li>
-				<?=$onpage5?'<li id="menu_active">':'<li>'; ?><a href="<?=$base_url; ?>contact.php">联系我们</a></li>
+				<?php for($i = 0; $i < 5; $i++): ?>
+					<?=$on_page_arr[$i]?'<li id="menu_active">':'<li>'; ?>
+						<a href="<?=$base_url.$nav_arr[$i][0]; ?>.php"><?=$nav_arr[$i][2]; ?></a>
+					</li>
+				<?php endfor; ?>
 			</ul>
 		</nav>
 	</div>

@@ -850,3 +850,41 @@ footer nav {
 	width: 100%;
 	text-align: center;
 }
+
+/* ============================= admin ============================= */
+.adminmenu {
+	margin-top: 100px !important;
+}
+
+#news_leftpart {
+	width: 400px;
+	padding: 10px;
+	float: left;
+	background: #CDD;
+}
+
+#news_leftpart form p:nth-child(2) input {
+	width: 343px;
+}
+
+#news_leftpart form input[type='submit'] {
+	float: right;
+}
+
+#news_rightpart {
+	width: 480px;
+	padding: 10px;
+	float: right;
+	background: #CDD;
+}
+
+#news_rightpart ul {
+	width: 480px;
+	font-size: 12px;
+}
+
+#news_rightpart input[type='checkbox'],
+#news_rightpart input[type='submit'],
+#news_rightpart input[type='checkbox'] ~ span {
+	float: right;
+}
