@@ -126,7 +126,7 @@ foreach($news_list_1 as $news_key=>$news_item) {
 								array_shift($news_content);
 								// 连接详细内容并替换图片
 								$news_detail = implode('',$news_content);
-								$news_detail = str_replace('<img src="','<img src="'.str_replace('index.html','',$news_urlpath),$news_detail);
+								// $news_detail = str_replace('<img src="','<img src="'.str_replace('index.html','',$news_urlpath),$news_detail);
 								// 输出详细内容
 								echo $news_detail;
 							endif;
