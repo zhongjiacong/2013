@@ -30,7 +30,7 @@ class items {
 				$news_timestr = $news_item['time']['year'].'/'.$news_item['time']['day'].'/'.
 					$news_item['time']['month'];
 				// 一项新闻内容的文件路径
-				$news_filepath = dirname(__FILE__).'/../news/'.$news_item_category.'/'.
+				$news_filepath = dirname(__FILE__).'/../../2013_news/'.$news_item_category.'/'.
 					implode('-',$news_item['time']).'/index.html';
 				// 读取新闻文件内容
 				$news_content = array();
@@ -62,7 +62,7 @@ class items {
 				$news_timestr = $news_item['time']['year'].'/'.$news_item['time']['day'].'/'.
 					$news_item['time']['month'];
 				// 一项新闻内容的文件路径
-				$news_filepath = dirname(__FILE__).'/../news/'.$news_item_category.'/'.
+				$news_filepath = dirname(__FILE__).'/../../2013_news/'.$news_item_category.'/'.
 					implode('-',$news_item['time']).'/index.html';
 				// 读取新闻文件内容
 				$news_content = array();

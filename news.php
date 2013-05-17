@@ -6,7 +6,7 @@ require 'frame/pager.php';
 require 'frame/items.php';
 
 // 初始化对象，并使用getlist方法获取文件路径树
-$news_dir = new listdir('news');
+$news_dir = new listdir('../2013_news');
 $news_list = $news_dir->getlist();
 // 对所有类型的新闻资讯按时间排序
 $news_list_1 = $news_dir->getpatharr($news_list[1]);

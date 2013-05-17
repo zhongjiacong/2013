@@ -11,7 +11,7 @@
 
 	if($_POST['title'] && $_POST['content']) {
 		// 创建目录
-		$news_item_dir = '../news/'.$_POST['category'].'/'.date("Y-m-d-h-i-s",time()).'/';
+		$news_item_dir = '../../2013_news/'.$_POST['category'].'/'.date("Y-m-d-h-i-s",time()).'/';
 		$news_item_filedir = $news_item_dir.'index.html';
 		if(!file_exists($news_item_dir))
 			mkdir($news_item_dir, 0777);
@@ -38,7 +38,7 @@
 		}
 		
 		foreach($del_arr as $del_key=>$del_item) {
-			$mylistdir = new listdir('../news/'.$del_item[0].'/'.$del_item[1].'/');
+			$mylistdir = new listdir('../../2013_news/'.$del_item[0].'/'.$del_item[1].'/');
 			$mylistdir->deldir();
 		}
 		

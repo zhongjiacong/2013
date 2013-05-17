@@ -18,6 +18,7 @@ class listdir {
 		if($dir=='')
 			$dir=$this->dirname;
 		
+		// echo $dir;
 		$d=@dir($dir);
 		while(false!==($item=$d->read())) {
 			if($item!="."&&$item!="..") {
